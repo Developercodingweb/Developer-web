@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Web Page</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050512;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:600px;
+height:600px;
+background:#5a4fff;
+filter:blur(250px);
+opacity:.25;
+top:-200px;
+left:-100px;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#7c3aed;
+filter:blur(250px);
+opacity:.2;
+bottom:-200px;
+right:-100px;
+z-index:-1;
+}
+
+.container{
+width:85%;
+margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:35px 0;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+}
+
+.menu{
+display:flex;
+gap:40px;
+}
+
+.menu a{
+text-decoration:none;
+color:#ccc;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#7c6cff;
+}
+
+.insta-btn{
+text-decoration:none;
+padding:12px 25px;
+border:1px solid #7c6cff;
+border-radius:15px;
+color:white;
+display:flex;
+gap:10px;
+align-items:center;
+transition:.3s;
+}
+
+.insta-btn:hover{
+background:#7c6cff;
+box-shadow:0 0 20px #7c6cff;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:80vh;
+gap:50px;
+}
+
+.left{
+max-width:520px;
+}
+
+.tags{
+display:flex;
+gap:15px;
+margin-bottom:30px;
+}
+
+.tags span{
+padding:10px 18px;
+border:1px solid rgba(255,255,255,.1);
+border-radius:30px;
+background:rgba(255,255,255,.03);
+}
+
+h1{
+font-size:90px;
+line-height:1;
+}
+
+.gradient{
+background:linear-gradient(90deg,#4f6fff,#9d4dff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.desc{
+margin-top:20px;
+color:#aaa;
+font-size:24px;
+line-height:1.6;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:20px;
+}
+
+.btn{
+padding:18px 40px;
+border-radius:15px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.primary{
+background:linear-gradient(90deg,#4f6fff,#a855f7);
+color:white;
+}
+
+.primary:hover{
+transform:translateY(-4px);
+box-shadow:0 0 30px #7c6cff;
+}
+
+.secondary{
+border:1px solid rgba(255,255,255,.1);
+color:white;
+}
+
+.secondary:hover{
+background:#111;
+}
+
+.right img{
+width:650px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,.1);
+box-shadow:0 0 50px rgba(124,108,255,.3);
+}
+
+/* CUSTOMIZE */
+
+.customize{
+margin-top:100px;
+}
+
+.customize h2{
+font-size:45px;
+margin-bottom:50px;
+}
+
+.cards{
+display:flex;
+gap:30px;
+}
+
+.card{
+flex:1;
+padding:35px;
+border-radius:25px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(124,108,255,.25);
+}
+
+.icon{
+width:70px;
+height:70px;
+background:linear-gradient(90deg,#4f6fff,#a855f7);
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:20px;
+font-size:28px;
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:100px;
+padding:40px 0;
+border-top:1px solid rgba(255,255,255,.08);
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.credit{
+font-size:24px;
+}
+
+.credit span{
+color:#7c6cff;
+font-weight:700;
+}
+
+.social a{
+font-size:35px;
+color:white;
+margin-left:25px;
+transition:.3s;
+}
+
+.social a:hover{
+color:#a855f7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">Developer Web Page</div>
+
+<div class="menu">
+<a href="#">home</a>
+<a href="#">about</a>
+<a href="#">projects</a>
+<a href="#">services</a>
+</div>
+
+<a class="insta-btn"
+href="https://www.instagram.com/developerwebpage"
+target="_blank">
+
+<i class="fa-brands fa-instagram"></i>
+Instagram
+
+</a>
+
+</nav>
+
+
+<section class="hero">
+
+<div class="left">
+
+<div class="tags">
+<span>Gmail</span>
+<span>salewebsite.com@gmail.com</span>
+<span>Whatsapp Number +92 331 4787533</span>
+</div>
+
+<h1>
+
+Hello, I'm
+
+<br>
+
+<span class="gradient">
+DeveloperWebPage.
+</span>
+
+</h1>
+
+<p class="desc">
+
+An experienced full-stack website developer with a passion for crafting unique digital experiences i can customize the website and edits.
+
+</p>
+
+<div class="buttons">
+
+<a href="#" class="btn primary">
+
+View All
+
+</a>
+
+<a href="#" class="btn secondary">
+
+View Projects
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="right">
+
+<!-- Replace with your image -->
+
+<img src=" " alt="">
+
+</div>
+
+</section>
+
+
+
+<section class="customize">
+
+<h2>
+
+ I Can
+
+<span class="gradient">
+
+Customize Your Website 
+
+</span>
+
+</h2>
+
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">
+
+<i class="fa-solid fa-pen"></i>
+
+</div>
+
+<h3> Website & Presentation Customization</h3>
+
+<p> I customize websites, videos, and presentations to match your style and requirements.
+💻 Web Developer (HTML & CSS)
+🎬 Video Editor
+📊 PowerPoint Designer
+
+I create Website Using HTML & CSS edit video and design Powerpoint presentation.
+
+</p>I create responsive websites, edit engaging videos, and design professional presentations.
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+</div>
+
+<h3>Edit Content</h3>
+
+<p> I create responsive websites using HTML & CSS, customize designs based on client needs, edit engaging videos, and design professional PowerPoint presentations. Fast delivery and attention to detail.
+
+Edit text, images and content directly.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+
+<i class="fa-solid fa-globe"></i>
+
+</div>
+
+<h3>Go Live</h3>
+
+<p>
+
+Publish your website with one click.
+
+</p>🚀 Need a website, video edit, or PowerPoint presentation?
+✅ Responsive HTML & CSS websites
+✅ Custom website designs
+✅ Professional video editing
+✅ Modern PowerPoint presentations
+📩 DM me for details.
+
+<a href="https://www.instagram.com/developerwebpage" target="_blank">
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<div class="credit">
+
+Made By
+
+<span>
+
+DeveloperWebPage
+
+</span>
+
+</div>
+
+
+<div class="social">
+
+<a href="https://www.instagram.com/developerwebpage" target="_blank">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+</div>
+
+</body>
+</html>
